@@ -54,6 +54,7 @@ Setting up a Mac after a few years playing with Python on Windows can be dauntin
 
 * [VS Code](https://code.visualstudio.com/)
 * [Python extention](https://marketplace.visualstudio.com/items?itemName=ms-python.python):
+    * [python/settings-reference](https://code.visualstudio.com/docs/python/settings-reference)
     * config user settings (code "$HOME/Library/Application Support/Code/User/settings.json") to use pipx global paths:
     
     ```json
@@ -64,6 +65,9 @@ Setting up a Mac after a few years playing with Python on Windows can be dauntin
     ```
 
 * [Pyright extention](https://marketplace.visualstudio.com/items?itemName=ms-pyright.pyright) complement python extension adding typechecking and more:
+
+    ![alt text](https://github.com/bigongiari/macos_python/raw/master/vscode_pyright_typechecking.png "Logo Title Text 1")
+
     * if you prefer using [pyre-check](https://github.com/facebook/pyre-check) [pyre-vscode](https://marketplace.visualstudio.com/items?itemName=fb-pyre-check.pyre-vscode) is also available
 
 
@@ -104,3 +108,4 @@ eval "$(direnv hook bash)"
 * [Definitive guide to python on Mac OSX](https://medium.com/@briantorresgil/definitive-guide-to-python-on-mac-osx-65acd8d969d0)
 * [Pipenv & Virtual Environments](https://docs.python-guide.org/dev/virtualenvs/)
 * [Kenneth Reitz - Pipenv: The Future of Python Dependency Management - PyCon 2018](https://www.youtube.com/watch?v=GBQAKldqgZs&t=2s)
+* [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
