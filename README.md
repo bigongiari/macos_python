@@ -5,6 +5,7 @@ Setting up a Mac after a few years playing with Python on Windows can be dauntin
 ### macOS build chain:
 
 * [xcode command line tools](https://developer.apple.com/xcode/), you need these to build stuff:
+
     ```bash
     xcode-select —-install
 
@@ -16,11 +17,13 @@ Setting up a Mac after a few years playing with Python on Windows can be dauntin
 ### Python developer tools:
 
 * [homebrew](https://brew.sh/) osx package manager:
+
     ```
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
 
 * [pyenv](https://github.com/pyenv/pyenv) manages python runtime installation:
+
     ```
     brew install pyenv
     pyenv install 3.7.4
@@ -28,17 +31,20 @@ Setting up a Mac after a few years playing with Python on Windows can be dauntin
     ```
 
 * [direnv](https://github.com/direnv/direnv/blob/master/docs/hook.md) per-folder environment configs:
+
     ```
     brew install direnv
     echo eval "$(direnv hook bash)" > ~/.bash_profile
     ```
 
 * [pipenv](https://github.com/pypa/pipenv) manage per-project python dependencies by transparently creating virtualenvs:
+
     ```
     brew install pipenv
     ```
 
 * [pipx](https://github.com/pipxproject/pipx) manages python based cli tools by installing them in ad-hoc virtualenvs and exposing shims (`~/.local/bin`):
+
     ```bash
     pip3 install --user pipx
     pipx install flake8
@@ -49,6 +55,7 @@ Setting up a Mac after a few years playing with Python on Windows can be dauntin
 * [VS Code](https://code.visualstudio.com/)
 * [Python extention](https://marketplace.visualstudio.com/items?itemName=ms-python.python):
     * config user settings (code "$HOME/Library/Application Support/Code/User/settings.json") to use pipx global paths:
+    
     ```json
     {
         "python.linting.flake8Path": "~/.local/bin/flake8",
